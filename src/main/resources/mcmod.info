@@ -1,0 +1,21 @@
+[
+{
+  "modid": "LinksAwakening",
+  "name": "Link's Awakening",
+  "description": "Play Link's Awakening in Minecraft!",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "nintern"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]

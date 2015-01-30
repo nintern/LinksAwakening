@@ -1,0 +1,8 @@
+package com.nintern.linksawakening;
+
+
+
+@Mod
+public class LinksAwakening {
+
+}

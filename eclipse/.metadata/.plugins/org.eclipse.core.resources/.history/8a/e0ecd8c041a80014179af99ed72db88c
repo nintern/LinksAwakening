@@ -1,0 +1,8 @@
+package com.nintern.linksawakening;
+
+import cpw.mods.fml.common.Mod;
+
+@Mod
+public class LinksAwakening {
+
+}

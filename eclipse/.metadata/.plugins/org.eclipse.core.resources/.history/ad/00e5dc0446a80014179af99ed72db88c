@@ -1,0 +1,38 @@
+package com.nintern.linksawakening;
+
+import com.nintern.linksawakening.proxy.IProxy;
+import com.nintern.linksawakening.reference.Reference;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+@Mod(modid=Reference.MOD_ID, name="Link's Awakening", version="1.7.10-1.0")
+public class LinksAwakening
+{
+	@Mod.Instance("LinksAwakening")
+	public static LinksAwakening instance;
+	
+	@SidedProxy(clientSide = "com.nintern.linksawakening.proxy.ClientProxy", serverSide = "com.nintern.linksawakening.proxy.ServerProxy")
+	public static IProxy proxy;
+	
+	@Mod.EventHandler
+	public void preInit(FMLPreInitializationEvent event)
+	{
+		
+	}
+	
+	@Mod.EventHandler
+	public void init(FMLInitializationEvent event)
+	{
+		
+	}
+	
+	@Mod.EventHandler
+	public void postInit(FMLPostInitializationEvent event)
+	{
+		
+	}
+}
