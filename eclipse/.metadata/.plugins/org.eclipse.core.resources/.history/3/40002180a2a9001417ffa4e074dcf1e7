@@ -1,0 +1,46 @@
+package com.nintern.linksawakening.block;
+
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.init.Blocks;
+import net.minecraft.util.IIcon;
+import net.minecraftforge.common.util.ForgeDirection;
+
+import com.nintern.linksawakening.creativetab.CreativeTabLinksAwakening;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
+public class BlockTable extends BlockLinksAwakening
+{
+	private IIcon blockTop, blockSide, blockBottom;
+	
+	public BlockTable()
+	{
+		super();
+		this.setBlockName("table");
+		this.setBlockTextureName("table");
+	}
+	
+	@Override
+	@SideOnly(Side.CLIENT)
+	
+	
+	@Override
+	@SideOnly(Side.CLIENT)
+	public IIcon getIcon(int side, int meta)
+	{
+		ForgeDirection dir = ForgeDirection.getOrientation(side);
+		if(dir == ForgeDirection.UP)
+		{
+			return blockTop;
+		}
+		else if(dir == ForgeDirection.DOWN)
+		{
+			return blockBottom;
+		}
+		else
+		{
+			return blockSide;
+		}
+	}
+}

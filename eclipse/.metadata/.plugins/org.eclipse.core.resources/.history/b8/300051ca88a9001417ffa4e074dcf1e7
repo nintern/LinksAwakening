@@ -1,0 +1,19 @@
+package com.nintern.linksawakening.creativetab;
+
+import com.nintern.linksawakening.init.ModItems;
+import com.nintern.linksawakening.reference.Reference;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class CreativeTabLinksAwakening
+{
+	public static final CreativeTabs LinksAwakening_Tab = new CreativeTabs(Reference.MOD_ID)
+	{
+		@Override
+		public Item getTabIconItem()
+		{
+			return ModItems.blueRupee;
+		}
+	};
+}

@@ -1,0 +1,5 @@
+package com.nintern.linksawakening.client.gui;
+
+public class GuiConfig {
+
+}

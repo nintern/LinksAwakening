@@ -1,0 +1,11 @@
+package com.nintern.linksawakening.item;
+
+import net.minecraft.item.Item;
+
+public class ItemLinksAwakening extends Item
+{
+	public ItemLinksAwakening()
+	{
+		super();
+	}
+}

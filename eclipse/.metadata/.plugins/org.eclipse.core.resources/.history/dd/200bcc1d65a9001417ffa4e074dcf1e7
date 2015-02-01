@@ -1,0 +1,10 @@
+package com.nintern.linksawakening.item;
+
+public class ItemGreenRupee extends ItemLinksAwakening
+{
+	public ItemGreenRupee()
+	{
+		super();
+		this.setUnlocalizedName("greenRupee");
+	}
+}

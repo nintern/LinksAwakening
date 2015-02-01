@@ -1,0 +1,7 @@
+package com.nintern.linksawakening.init;
+
+public class ModBlocks
+{
+	public static final BlocksLinksAwakening table = new BlockTable();
+	
+}

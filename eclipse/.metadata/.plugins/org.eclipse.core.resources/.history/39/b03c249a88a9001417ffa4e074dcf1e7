@@ -1,0 +1,15 @@
+package com.nintern.linksawakening.creativetab;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class CreativeTabLinksAwakening
+{
+	public static final CreativeTabs LinksAwakening_Tab = new CreativeTabs()
+	{
+		@Override
+		public Item getTabIcon()
+		{
+			return null;
+		}
+	};
+}

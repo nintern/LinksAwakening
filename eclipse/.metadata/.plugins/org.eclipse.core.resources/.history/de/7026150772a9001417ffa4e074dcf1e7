@@ -1,0 +1,10 @@
+package com.nintern.linksawakening.block;
+
+public class BlockTable extends BlockLinksAwakening
+{
+	public BlockTable()
+	{
+		super();
+		this.setBlockName();
+	}
+}

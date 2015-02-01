@@ -1,0 +1,18 @@
+package com.nintern.linksawakening.block;
+
+import net.minecraft.util.IIcon;
+
+import com.nintern.linksawakening.creativetab.CreativeTabLinksAwakening;
+
+public class BlockTable extends BlockLinksAwakening
+{
+	@SideOnly(Side.CLIENT)
+	private IIcon[] blockTop, blockSide;
+	
+	public BlockTable()
+	{
+		super();
+		this.setBlockName("table");
+		this.setBlockTextureName("table");
+	}
+}

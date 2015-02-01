@@ -1,0 +1,24 @@
+package com.nintern.linksawakening.item;
+
+import com.nintern.linksawakening.reference.Reference;
+
+import net.minecraft.item.Item;
+
+public class ItemLinksAwakening extends Item
+{
+	public ItemLinksAwakening()
+	{
+		super();
+	}
+	
+	@Override
+	public String getUnlocalizedName()
+	{
+		return String.format("item.%s%s", Reference.MOD_ID.toLowerCase(), getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+	}
+	
+	protected String getUnwrappedUnlocalizedName(String unlocalizedName)
+	{
+		return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
+	}
+}

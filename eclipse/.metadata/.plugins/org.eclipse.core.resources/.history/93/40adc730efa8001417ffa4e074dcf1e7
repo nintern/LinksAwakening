@@ -1,0 +1,26 @@
+package com.nintern.linksawakening.client.gui;
+
+import java.util.List;
+
+import com.nintern.linksawakening.handler.ConfigurationHandler;
+import com.nintern.linksawakening.reference.Reference;
+
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraftforge.common.config.ConfigElement;
+import cpw.mods.fml.client.config.GuiConfig;
+import cpw.mods.fml.client.config.IConfigElement;
+
+public class ModGuiConfig extends GuiConfig
+{
+
+	public ModGuiConfig(GuiScreen guiScreen)
+	{
+		super(guiScreen,
+				new ConfigElement(ConfigurationHandler.configuration.getCategory(Configuration.CATEGORY_GENERAL)),
+				Reference.MOD_ID,
+				false,
+				false,
+				GuiConfig.getAbridgedConfigPath(ConfigurationHandler.configuration.toString()));
+	}
+	
+}

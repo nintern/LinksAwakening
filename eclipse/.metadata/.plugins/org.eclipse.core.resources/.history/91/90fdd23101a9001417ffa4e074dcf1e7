@@ -1,0 +1,9 @@
+package com.nintern.linksawakening.init;
+
+import com.nintern.linksawakening.item.ItemGreenRupee;
+import com.nintern.linksawakening.item.ItemLinksAwakening;
+
+public class ModItems
+{
+	public static final ItemLinksAwakening greenRupee = new ItemGreenRupee();
+}

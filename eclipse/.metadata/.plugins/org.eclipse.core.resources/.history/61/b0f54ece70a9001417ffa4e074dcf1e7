@@ -1,0 +1,25 @@
+package com.nintern.linksawakening.block;
+
+import com.nintern.linksawakening.reference.Reference;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockLinksAwakening extends Block
+{
+	public BlockLinksAwakening(Material material)
+	{
+		super(material);
+	}
+	
+	public BlockLinksAwakening()
+	{
+		this(Material.rock);
+	}
+	
+	@Override
+	public String getUnlocalizedName()
+	{
+		return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName())); 
+	}
+}

@@ -1,0 +1,14 @@
+package com.nintern.linksawakening.block;
+
+import com.nintern.linksawakening.creativetab.CreativeTabLinksAwakening;
+
+public class BlockTable extends BlockLinksAwakening
+{
+	public BlockTable()
+	{
+		super();
+		this.setBlockName("table");
+		this.setBlockTextureName("table");
+		this.setCreativeTab(CreativeTabLinksAwakening.LinksAwakening_Tab);
+	}
+}

@@ -1,0 +1,6 @@
+package com.nintern.linksawakening.item;
+
+public class ItemRedRupee extends ItemLinksAwakening
+{
+	//Red Rupee worth 30 rupees
+}

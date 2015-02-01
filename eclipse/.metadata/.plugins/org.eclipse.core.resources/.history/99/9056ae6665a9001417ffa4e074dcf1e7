@@ -1,0 +1,18 @@
+package com.nintern.linksawakening.init;
+
+import com.nintern.linksawakening.item.ItemGreenRupee;
+import com.nintern.linksawakening.item.ItemLinksAwakening;
+import com.nintern.linksawakening.reference.Reference;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
+@GameRegistry.ObjectHolder(Reference.MOD_ID)
+public class ModItems
+{
+	public static final ItemLinksAwakening greenRupee = new ItemGreenRupee();
+	
+	public static void init()
+	{
+		GameRegistry.registerItem(greenRupee, "greenRupee");
+	}
+}

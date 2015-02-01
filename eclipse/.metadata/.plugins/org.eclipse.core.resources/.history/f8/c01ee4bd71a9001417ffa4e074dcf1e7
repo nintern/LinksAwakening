@@ -1,0 +1,9 @@
+package com.nintern.linksawakening.block;
+
+public class BlockTable extend BlockLinksAwakening
+{
+	public BlockTable()
+	{
+		super();
+	}
+}

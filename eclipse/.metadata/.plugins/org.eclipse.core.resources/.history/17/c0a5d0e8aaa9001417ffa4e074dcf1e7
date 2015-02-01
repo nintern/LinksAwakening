@@ -1,0 +1,17 @@
+package com.nintern.linksawakening.init;
+
+import com.nintern.linksawakening.block.BlockLinksAwakening;
+import com.nintern.linksawakening.block.BlockTable;
+import com.nintern.linksawakening.reference.Reference;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+@GameRegistry.ObjectHolder(Reference.MOD_ID)
+public class ModBlocks
+{
+	public static final BlockLinksAwakening table = new BlockTable();
+	
+	public static void init()
+	{
+		GameRegistry.registerBlock(table, "table");
+	}
+}

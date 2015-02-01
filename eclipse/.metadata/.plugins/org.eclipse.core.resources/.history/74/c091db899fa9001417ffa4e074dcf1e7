@@ -1,0 +1,29 @@
+package com.nintern.linksawakening.block;
+
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.util.IIcon;
+
+import com.nintern.linksawakening.creativetab.CreativeTabLinksAwakening;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
+public class BlockTable extends BlockLinksAwakening
+{
+	private IIcon blockTop, blockSide;
+	
+	public BlockTable()
+	{
+		super();
+		this.setBlockName("table");
+		this.setBlockTextureName("table");
+	}
+	
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void registerBlockIcons(IIconRegister iconRegister)
+	{
+		blockTop = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName() + "_top")));
+		blockSide = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName() + "_side")));
+	}
+}

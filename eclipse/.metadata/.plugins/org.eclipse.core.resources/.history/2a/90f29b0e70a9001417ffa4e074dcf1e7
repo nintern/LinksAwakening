@@ -1,0 +1,12 @@
+package com.nintern.linksawakening.block;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockLinksAwakening extends Block
+{
+	public Block(Material material)
+	{
+		super(material);
+	}
+}

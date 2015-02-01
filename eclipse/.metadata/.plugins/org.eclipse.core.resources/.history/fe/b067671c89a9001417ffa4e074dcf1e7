@@ -1,0 +1,11 @@
+package com.nintern.linksawakening.item;
+
+public class ItemGreenRupee extends ItemLinksAwakening
+{
+	//Green Rupee worth 5 rupees
+	public ItemGreenRupee()
+	{
+		super();
+		this.setUnlocalizedName("greenRupee");
+	}
+}

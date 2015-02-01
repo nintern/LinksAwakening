@@ -1,0 +1,8 @@
+package com.nintern.linksawakening.block;
+
+import net.minecraft.block.Block;
+
+public class BlockLinksAwakening extends Block
+{
+	
+}
